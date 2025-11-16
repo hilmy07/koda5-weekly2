@@ -8,8 +8,8 @@
 
 export function processNumbers(arr){
 
-    let ganjil = arr.filter(num => num % 2 !== 0);
-    let row = '';
+    const ganjil = arr.filter(num => num % 2 !== 0);
+    const row = "";
 
     if(ganjil.length === 0){
         return console.log(1);
