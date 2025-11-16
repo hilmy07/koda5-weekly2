@@ -39,3 +39,63 @@ console.log("===========================================");
   }
 })();
 console.log("===========================================");
+
+/**
+ * Task Hilmy
+ */
+import hilmy from "./tasks/hilmy/index.js"
+
+console.log("\n===========================================\n");
+(function taskHilmy() {
+  try {
+    // Triangle of Numbers
+    const triangle = hilmy.triangle(5);
+    // hilmy.triangle(5);
+    console.log(triangle);
+  } catch (error) {
+    console.log(error.message);
+  }
+
+  try {
+    // Range of Numbers
+    let rentang = hilmy.buatRentang(1, 5);
+    console.log(rentang);
+  } catch (error) {
+    console.log(error.message);
+  }
+
+  try {
+    // Process Numbers
+    let processedNumbers = hilmy.processNumbers([1, 2, 3, 4, 5]);
+    console.log(processedNumbers);
+  } catch (error) {
+    console.log(error.message);
+  }
+
+  try {
+    // fetch async await
+    let asyncAwait = hilmy.getDataSatu(true);
+    console.log(asyncAwait);
+  } catch (error) {
+    console.log(error.message);
+  }
+
+  try {
+    // fetch then catch
+    let asyncAwait = hilmy.getDataDua(true);
+    console.log(asyncAwait);
+  } catch (error) {
+    console.log(error.message);
+  }
+
+  try {
+    // fetch data
+    let getData = hilmy.getDataFromServer(true, hilmy.processData);
+    console.log(getData);
+  } catch (error) {
+    console.log(error.message);
+  }
+
+})();
+// console.log("===========================================");
+
