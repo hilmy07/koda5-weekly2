@@ -7,14 +7,14 @@
  */
 
 export function buatRentang(a, b){
-    let rentang = [];
-    let row = '';
+    const rentang = [];
+    const row = "";
 
     for(let i=a; i<=b; i++){
         rentang.push(i);
     }
     console.log(rentang);
 
-    return row
+    return row;
 }
 
