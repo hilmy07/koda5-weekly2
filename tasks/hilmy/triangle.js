@@ -5,11 +5,11 @@
  */
 
 export function triangle(n){
-    let row = '';
+    const row = "";
     for(let i=1; i<=n; i++){
-        let row = '';
+        let row = "";
         for(let j=1; j<=i; j++){
-            row += j + ' ';
+            row += j + " ";
         }
         console.log(row);
     }
